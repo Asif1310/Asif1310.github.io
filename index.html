@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Portfolio</title>
+  <title>Asif Syed</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="https://github.com/Asif1310/Resume/raw/main/AsifSyedDataScience.pdf" target="_blank">Resume</a></li>
+      <li><a href="http://www.linkedin.com/in/asifsyd" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/Asif1310" target="_blank">GitHub</a></li>
+      <li><a href="https://www.dumbdatum.com/" target="_blank">Blog (Dumbdatum.com)</a></li>
+      <li><a href="https://medium.com/@asif1310/about" target="_blank">Medium</a></li>
+ 	<li><a href="https://www.kaggle.com/asifsyed1310" target="_blank">Kaggle</a></li>
+    </ul>
+  </div>
+<header>
+
   
 <div class="container">
 
@@ -12,13 +31,32 @@
       <img src="./assets/Image.jpg" alt="Your Photo">
     </div>
 
-    <div class="bio-container">
-      <p class="bio">
-        Hola, I am Asif Syed and thanks for visiting my website!
-        I am currently pursuing a Master's degree in Business Analytics and Data Science at the home of college football's cowboys - Oklahoma State University. I will be graduating in May 2024, and I am currently on the lookout for full-time data science roles.
-      </p>
-    </div>
- 
+    <div class = "bio fade-in-delay"> 
+<h1> Hola, I am Asif Syed! </h1>
+</div>
+
+<div class = "bio-ext fade-in-delay-extend"> 
+<br></br>
+<p> Master's in Business Analytics & Data Science (2022-2024) </p>
+<br></br>
+<p> Oklahoma State University, Stillwater, United States.  </p>
+<br></br>
+<p> I am currently looking for full-time data science opportunities once I graduate in May 2024. </p>
+</div>
+
+<div class="arrow_container fade-in-delay-extend">
+    <a href="#toscroll">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <span class="scrolltext">Scroll down to learn more about me</span>
+    </a>
+</div>
+
+
+ </header>
+
+<div id="toscroll">
 
   <div class="timeline">
     <div class="contentcontainer left">
@@ -48,13 +86,13 @@
 <div class="contentcontainer left">
       <div class="timelinecontent fade-in-left">
         <h2>August, 2022 </h2>
-        <p>Started pursuing a Master’s in Business Analytics & Data Science degree at Oklahoma State University</p>
+        <p>Started pursuing a Master’s degree in Data Science at Oklahoma State University</p>
       </div>
     </div>
 <div class="contentcontainer right">
       <div class="timelinecontent fade-in-right">
         <h2>October, 2022 </h2>
-        <p>Led a team of four that finished in top 50 for Humana Mays predictive analytics case competition.</p>
+        <p>Made it to top 50 in the Humana Mays predictive analytics case competition.</p>
       </div>
     </div>
 <div class="contentcontainer left">
@@ -71,19 +109,32 @@
     </div>
   </div>
 
-  <div class="center-container fade-in">
-    <div class="grid-container">
-      <button class="button">Profile 1</button>
-      <button class="button">Profile 2</button>
-      <button class="button">Profile 3</button>
-      <button class="button">Profile 4</button>
-      <button class="button">Profile 5</button>
-      <button class="button">Profile 6</button>
-      <button class="button">Profile 7</button>
-      <button class="button">Profile 8</button>
-      <button class="button">Profile 9</button>
+</div>
+
+<div class = "link-cont">
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6939791386325987328" height="728" width="437" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+</div>
+
+
+<section id="projects">
+  <div class="project-container">
+    <h2 class="section-title">Projects</h2>
+    <div class="project">
+      <h3 class="project-title">Automating the beat assignment for a newswire product by building a topic model using NLP </h3>
+      <p class="project-description">Short description of Project 1</p>
+      <a class="project-button" href="https://github.com/yourusername/project1">GitHub</a>
     </div>
+    <div class="project">
+      <h3 class="project-title">LinkedIn Engagement Predictor</h3>
+      <p class="project-description">Short description of Project 2</p>
+      <a class="project-button" href="https://github.com/yourusername/project2">GitHub</a>
+    </div>
+    <!-- Add more projects here -->
   </div>
+</section>
+  
 
 </div>
 
