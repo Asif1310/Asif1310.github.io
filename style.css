@@ -1,8 +1,178 @@
+header {
+background: #B993D6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+}
+
 /* Reset default margin and padding */
-body, h1, h2, p, ul, li {
+body, h2, p, ul, li {
   margin: 0;
   padding: 0;
 }
+
+.profile-image {
+position: absolute;
+  top: 50%;
+  left: 10%;
+transform: translateY(-50%);
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.fade-in-delay {
+  opacity:0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+.fade-in-delay-extend {
+  opacity:0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+
+
+
+
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.bio {
+position: absolute;
+top: 30%; 
+left: 30%;
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bio-ext {
+position: absolute;
+top: 40%; 
+left: 30%;
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.arrow_container {
+  position: absolute;
+top: 80%; 
+left: 30%;
+  width: 24px;
+  height: 24px;
+  margin: 0px auto;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+ 
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+ 
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+ 
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.scrolltext {
+  display: block;
+  margin-top: 75px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse { 
+to {
+    opacity: 1;
+  }
+}
+@keyframes move {
+  25% {
+    opacity: 1;
+ 
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 
 /* Set a background color for the body */
 body {
@@ -37,14 +207,7 @@ body {
   padding: 20px;
 }
 
-.fade-in {
-  animation: fadeIn 5s;
-}
 
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(20px);}
-  100% { opacity: 1; transform: translateY(0);}
-}
 
 .fade-in-right {
   
@@ -66,34 +229,8 @@ body {
   100% { opacity: 1; transform: translateX(0);}
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 20px;
-  float: left;
-}
 
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.bio-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  margin-left: 200px;
-}
-
-.bio {
-  font-size: 16px;
-  line-height: 1.4;
-  color: #333;
-}
 
 * {
   box-sizing: border-box;
@@ -103,12 +240,23 @@ body {
 
 /* The actual timeline (the vertical ruler) */
 .timeline {
-background-color: #6D52A9;
+background: #CC95C0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
   font-family: Helvetica, sans-serif;
  position: relative;
-  margin-bottom: 20px;
+  
 margin-top: 40px;
+margin-bottom: 20px:
   max-width: 2000px;
+}
+
+.link-cont {
+margin-top:20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -229,6 +377,70 @@ margin-top: 40px;
   }
 }
 
+/* Project Section Styles */
+#projects {
+  padding: 40px 0;
+}
+
+.project-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.project {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.project:nth-child(odd) {
+ background: #FF8008;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.project:nth-child(even) {
+background: #1CD8D2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93EDC7, #1CD8D2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.project-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-description {
+  color: #666;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.project-button:hover {
+  background-color: #555;
+}
+
 
 .center-container {
   display: flex;
@@ -287,4 +499,112 @@ margin-top: 40px;
 .button:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background: #F2994A;  /* fallback for old browsers */
+background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+
+
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
 }
