@@ -141,7 +141,6 @@ left: 30%;
   text-transform: uppercase;
   white-space: nowrap;
   opacity: .25;
-  animation: pulse 2s linear alternate infinite;
 }
 
 @keyframes pulse { 
@@ -455,7 +454,6 @@ background: linear-gradient(to right, #93EDC7, #1CD8D2); /* W3C, IE 10+/ Edge, F
 }
 
 
-/* CSS */
 .button {
   align-items: center;
   appearance: none;
