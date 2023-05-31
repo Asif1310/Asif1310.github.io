@@ -1,146 +1,392 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Asif Syed</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <title>Asif Syed</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="assets/css/steller.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-  </label>
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-      <li><a href="https://github.com/Asif1310/Resume/raw/main/AsifSyedDataScience.pdf" target="_blank">Resume</a></li>
-      <li><a href="http://www.linkedin.com/in/asifsyd" target="_blank">LinkedIn</a></li>
-      <li><a href="https://github.com/Asif1310" target="_blank">GitHub</a></li>
-      <li><a href="https://www.dumbdatum.com/" target="_blank">Blog (Dumbdatum.com)</a></li>
-      <li><a href="https://medium.com/@asif1310/about" target="_blank">Medium</a></li>
- 	<li><a href="https://www.kaggle.com/asifsyed1310" target="_blank">Kaggle</a></li>
-    </ul>
-  </div>
-<header>
-<div class="container">
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<div class="profile-image fade-in">
-      <img src= "assets/Image.jpg" alt="">
-</div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hireme">Hire Me</a>
+                    </li>                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testmonial">Testmonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
 
-<div class = "bio fade-in-delay"> 
-<h1> Hola, I am Asif Syed! </h1>
-</div>
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="subtitle">Hola, I'm</h6>
+                <h6 class="title">Asif Syed</h6> <br></br>
+                <p>Master's in Data Science (2022-2024) | Oklahoma State University</p>
 
-<div class = "bio-ext fade-in-delay-extend"> 
-<br></br>
-<p> Master's in Business Analytics & Data Science (2022-2024) </p>
-<br></br>
-<p> Oklahoma State University, Stillwater, United States.  </p>
-<br></br>
-<p> I am currently looking for full-time data science opportunities once I graduate in May 2024. </p>
-</div>
+                <div class="buttons pt-3">
+<a target="_blank" rel="noopener noreferrer" href= "https://github.com/Asif1310/Resume/raw/main/AsifSyedDataScience.pdf">
+                    <button class="btn btn-dark rounded">DOWNLOAD MY RESUME</button> </a>
+                </div>      
 
-<div class="arrow_container fade-in-delay-extend">
-    <a href="#toscroll">
-  <div class="chevron"></div>
-  <div class="chevron"></div>
-  <div class="chevron"></div>
-  <span class="scrolltext">Scroll down to learn more about me</span>
-    </a>
-</div>
+                <div class="socials mt-4">
+                    
+                    <a target="_blank" rel="noopener noreferrer" class="social-item" href="http://www.linkedin.com/in/asifsyd"><i class="ti-linkedin"></i></a>
+                    <a target="_blank" rel="noopener noreferrer" class="social-item" href="https://github.com/Asif1310"><i class="ti-github"></i></a>
+                    
+                </div>
+            </div>              
+            <div class="img-holder">
+                <img src="assets/imgs/data-scientist-icon	.svg" alt="">
+            </div>      
+        </div>  
+
+        <!-- Header-widget -->
+        <div class="widget">
+            <div class="widget-item">
+                <h2>5</h2>
+                <p>Years of Experience in Analytics</p>
+            </div>
+            <div class="widget-item">
+                <h2>30+</h2>
+                <p>Data Science articles written on Medium</p>
+            </div>
+        </div>
+    </header>
+    <!-- End of Page Header -->
+    
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/Image.jpg" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">About me:</h6>
+                    <p>I completed my undergrad in Civil Engineering, but my journey took a strange turn when I received an offer for an entry-level data analyst role from Accenture in 2018. I had very little coding and analytics experience prior to this point, but I learned programming skills such as SQL and Python on the job. Between 2018 and 2022, I worked for four years in the data consulting industry and had the privilege of working with reputable companies like Infosys and Deloitte after leaving Accenture.</p>
+                    <p>The grueling lockdown of the COVID-19 pandemic shook me to the core and threw me into an existential crisis, causing me to question the direction of my career. After the lockdown ended, I made a conscious decision to leave my job at Deloitte and move to the United States to pursue a Master's degree in data science. I saw this as an opportunity to build a strong foundation before transitioning my career from consulting to pure data science. </p>
+
+<p>I successfully completed one year in the United States now. Despite battling social anxiety and homesickness, I excelled academically with a perfect 4.0 CGPA and secured a data science summer internship with ISN Software Corporation in Dallas. In addition to my beautiful and chaotic journey, I possess a deep passion for writing. I combine this passion with the data science skills I am acquiring to create content on Medium, LinkedIn, and my blog (dumbdatum.com).</p>
+<a target="_blank" rel="noopener noreferrer" href="https://linktr.ee/asifsyd">
+                    <button class="btn btn-primary rounded mt-3">Linktree</button>     </a>              
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service section -->
+    <section id="hireme" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Hire me</h6>
+            <h6 class="section-title mb-4">What Skills and Expertise Can I Bring to Your Firm if Hired?</h6>
+            <p class="mb-5 pb-4"> I bring a strong sense of confidence and professionalism to the table, backed by 4 years of experience in the data consulting industry with top MNCs such as Deloitte, Accenture, and Infosys. In addition, I bring the following skills that I have honed throughout my professional and academic journey:</p>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-desktop"></i>
+                            <h5>Programming skills</h5> <h6> SQL, Python & R </h6> <br></br>
+<h6 class="subtitle">
+All the programming skills I acquired were developed on the job while working on solving various client problems.
+</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-wand"></i>
+                            <h5>Machine Learning</h5>
+<h6> Or just some fancy math </h6> <br></br> <h6 class="subtitle">
+Some consider machine learning to be magic, while others perceive it as a glorified form of statistics. I find myself somewhere in between. 
+</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-bar-chart"></i>
+                            <h5>Data Visualization</h5>
+<h6> Pictures for data nerds </h6> <br></br> <h6 class="subtitle">
+I've used Tableau, Power BI, Matplotlib, and ggplot to create stunning visualizations and embed them on web pages.
+</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-layout-media-overlay-alt-2"></i>
+                            <h5>NLP</h5>
+<h6> Yep, Natural Language Processing </h6> <br></br> <h6 class="subtitle">
+No, I do not know how to build another ChatGPT. But I worked on projects involving topic modeling and sentiment analysis. 
+</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Section -->
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Portfolio</h6>
+            <h6 class="section-title mb-4">Check out some of the projects I worked on:</h6>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/linkedin.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>LinkedIn Engagement Predictor</h5>
+                                <a target="_blank" rel="noopener noreferrer" href=https://github.com/Asif1310/LinkedIn-Engagement-Prediction><i class="ti-github"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href=http://linkboost.pythonanywhere.com/><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/news.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>News Beat predictor</h5>
+                                <a target="_blank" rel="noopener noreferrer" href=http://asif1310.pythonanywhere.com/><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/bitcoin.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>How does the Twitter world react just before Bitcoin soars or crashes?</h5>
+                                <a target="_blank" rel="noopener noreferrer" href=https://github.com/Asif1310/BitCoin-Twitter-Project><i class="ti-github"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/football.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Scraping a soccer stats web page for data analysis.</h5>
+                                <a target="_blank" rel="noopener noreferrer" href=https://github.com/Asif1310/3001><i class="ti-github"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/marketing.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a target="_blank" rel="noopener noreferrer" href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="assets/imgs/cricket.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Project Title</h5>
+                                <a target="_blank" rel="noopener noreferrer" href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a target="_blank" rel="noopener noreferrer" href="javascript:void(0)"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Testmonial Section -->
+    <section id="testmonial" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Testmonial</h6>
+            <h6 class="section-title mb-4">What People Say About Me</h6>
 
 
- </header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/kenneth.jfif" alt="">
+                                <p>"While balancing coursework and intense program responsibility linked to the MS in Business Analytics and Data Science Program at Oklahoma State University, Asif accepted and functioned with excellence in a Graduate Assistantship role assigned to the Watson Graduate School of Management during the spring term of 2023. As an overall assessment of his performance on the job, Asif was timely, courteous without fail, capable of executing any task assigned and elevated the quality of overall output as opposed to any of his predecessors during my time in this space. During an alumni dashboard project, Asif worked well with others across campus, remaining sensitive to ADA compliance goals, university brand guidelines and he applied appropriate register in written communications to those in roles of significance. Lastly, as a person, he's humble yet confident, always making logical decisions fully aware of rippling issues. Whomever employs Asif as a full-time employee in the future, will experience significant benefit from that decision."</p>
+                                <h1 class="title">Kenneth Kern</h1>
+                                <h1 class="subtitle">Director, Business Graduate Programs, Spears School of Business</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/robin.jfif" alt="">
+                                <p>"Asif was a graduate assistant for the Eastin Center last semester and to say that he was sharp, productive, and collaborative is an understatement. Here are things Asif brought to the table while working on our team: a) he had a knack for hearing issues that were challenging and coming up with scalable solutions that were easy to implement b) worked very well with both students and colleagues in a diverse team setting c) had a witty sense of humor which made working with him all the more pleasant. How wonderful to have a smart, hardworking, collaborative, and witty colleague! I would highly recommend Asif to any team who needs a tech-savvy problem-solver."</p>
+                                <h1 class="title">Robin Darmon</h1>
+                                <h1 class="subtitle">Director, Eastin Center for Career Readiness</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card testmonial-card border">
+                            <div class="card-body">
+                                <img src="assets/imgs/akshay.jfif" alt="">
+                                <p>"I worked with Asif on SAP Project in Deloitte. I must say Asif was a great asset to the team.
+Asif is one of those rare colleagues who excel at everything they put their hands on. He is really good with numbers and holds excellent data analysis skills. He also holds excellent communication skills and shows deep empathy for the users. He is always curious to learn and tries to implement innovative solutions to improve the existing processes. I'm sure Asif would prove to be a great asset to any company."</p>
+                                <h1 class="title">Akshay Mahajan</h1>
+                                <h1 class="subtitle">Consultant at Deloitte</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of testmonial section -->
 
-<div id="toscroll">
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Blog</h6>
+            <h6 class="section-title mb-4">Featured articles</h6>
 
-  <div class="timeline">
-    <div class="contentcontainer left">
-      <div class="timelinecontent fade-in-left">
-        <h2>May, 2018</h2>
-        <p>Started as Data Analyst at Accenture</p>
-      </div>
-    </div>
-    <div class="contentcontainer right">
-      <div class="timelinecontent fade-in-right">
-        <h2>June, 2019</h2>
-        <p>Awarded 'Most Focused' title as part of the #MyRecognition program at Accenture</p>
-      </div>
-    </div>
-<div class="contentcontainer left">
-      <div class="timelinecontent fade-in-left">
-        <h2>May, 2020</h2>
-        <p>First professional promotion</p>
-      </div>
-    </div>
-<div class="contentcontainer right">
-      <div class="timelinecontent fade-in-right">
-        <h2>November, 2021 </h2>
-        <p>Started as Consultant at Deloitte</p>
-      </div>
-    </div>
-<div class="contentcontainer left">
-      <div class="timelinecontent fade-in-left">
-        <h2>August, 2022 </h2>
-        <p>Started pursuing a Master’s degree in Data Science at Oklahoma State University</p>
-      </div>
-    </div>
-<div class="contentcontainer right">
-      <div class="timelinecontent fade-in-right">
-        <h2>October, 2022 </h2>
-        <p>Made it to top 50 in the Humana Mays predictive analytics case competition.</p>
-      </div>
-    </div>
-<div class="contentcontainer left">
-      <div class="timelinecontent fade-in-left">
-        <h2>June, 2023 </h2>
-        <p>Started as Data science intern at ISN Software Corporation</p>
-      </div>
-    </div>
-<div class="contentcontainer right">
-      <div class="timelinecontent fade-in-right">
-        <h2>May, 2024 </h2>
-        <p>Anticipated graduation </p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<div class = "link-cont">
-
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6939791386325987328" height="728" width="437" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-
-</div>
-
-
-<section id="projects">
-  <div class="project-container">
-    <h2 class="section-title">Projects</h2>
-    <div class="project">
-      <h3 class="project-title">Automating the beat assignment for a newswire product by building a topic model using NLP </h3>
-      <p class="project-description">Short description of Project 1</p>
-      <a class="project-button" href="https://github.com/yourusername/project1">GitHub</a>
-    </div>
-    <div class="project">
-      <h3 class="project-title">LinkedIn Engagement Predictor</h3>
-      <p class="project-description">Short description of Project 2</p>
-      <a class="project-button" href="https://github.com/yourusername/project2">GitHub</a>
-    </div>
-    <!-- Add more projects here -->
-  </div>
-</section>
-
-
+            <div class="row text-left">
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <img src="assets/imgs/window.png" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">A new detail that helps you step up your ‘window’ game in SQL!</h5>
+                            <div class="post-details">
+                                <a target="_blank" rel="noopener noreferrer" href=https://www.dumbdatum.com/>Posted to: dumbdatum.com</a>
+                            </div>
+                            <p>I have a love-hate relationship with the window functions in SQL. I love how it allows one access to data from rows beyond the current row as it simplifies the tasks like creating rolling averages or ranking values.</p>
+                            <a target="_blank" rel="noopener noreferrer" href=https://www.dumbdatum.com/2022/07/a-new-detail-that-helps-you-step-up.html>Read More..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <img src="assets/imgs/poisson.png" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">A Poisson pondering</h5>
+                            <div class="post-details">
+                                <a target="_blank" rel="noopener noreferrer"  href=https://medium.com/@asif1310>Posted to: Medium.com</a>
+                              
+                            </div>
+                            <p>It might seem counterintuitive, like, how could a sample size be infinite?
+</p>
+                            <a target="_blank" rel="noopener noreferrer" href=https://medium.com/@asif1310/a-poisson-pondering-c789df44b123>Read More..</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border mb-4">
+                        <img src="assets/imgs/var.jpeg" alt="" class="card-img-top w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">The denominator of sample variance!</h5>
+                            <div class="post-details">
+                                <a target="_blank" rel="noopener noreferrer" href=https://www.dumbdatum.com/>Posted to: dumbdatum.com </a>
+                             
+                            </div>
+                            <p>When I was young, I tried to fit every new thing I learned with what I already knew. But every time I learned something that didn’t fit my view</p>
+                            <a target="_blank" rel="noopener noreferrer" href=https://www.dumbdatum.com/2022/07/the-denominator-of-sample-variance.html>Read More..</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
   
 
-</div>
+    <!-- Contact Section -->
+    <section id="contact" class="position-relative section">
+        <div class="container text-center">
+            <h6 class="subtitle">Contact</h6>
+            <h6 class="section-title mb-4">Get In Touch With Me</h6>
+            <p class="mb-5 pb-4">Reach out to me via the options below if you are interested in hiring me, if you would like to collaborate with me on any cool project, or if you just want to say hi.</p>     
+<div class="socials">
+                        <a class="social-item" target="_blank" rel="noopener noreferrer" href="mailto:asif.syed@okstate.edu"><i class="ti-microsoft"></i></a>
+                        <a class="social-item" target="_blank" rel="noopener noreferrer" href="mailto:sasif7439@gmail.com"><i class="ti-google"></i></a>
+                        <a class="social-item" target="_blank" rel="noopener noreferrer" href=https://www.linkedin.com/in/asifsyd/><i class="ti-linkedin"></i></a>
+                    </div> 
+        </div>  
 
-<script src="javascript.js"></script>
+             
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <p> Asif Syed </p>
+                </div>
+                <div class="col-sm-6">
+                      </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- End of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+
 </body>
 </html>
